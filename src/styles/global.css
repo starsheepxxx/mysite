@@ -1,0 +1,88 @@
+html {
+  background-color: #f1f5f9;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+hr {
+  border: 0.5px solid lightgray;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: 2.5rem;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+header,
+footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80ch;
+}
+
+.content-wrapper {
+  width: 100%;
+}
+
+/* ナビゲーションのスタイル */
+
+.nav-links {
+  width: 100%;
+  background-color: #ff9776;
+  display: none;
+  margin: 0;
+}
+
+.nav-links a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-links a:hover,
+a:focus {
+  background-color: #ff9776;
+}
+
+@media screen and (min-width: 636px) {
+  .nav-links {
+    display: flex;
+    position: static;
+    width: auto;
+    background: none;
+  }
+
+  .nav-links a {
+    display: inline-block;
+    flex: 1;
+    margin: 0;
+    padding: 15px 0;
+  }
+
+  .content-wrapper {
+    max-width: 80ch;
+  }
+}
